@@ -1,13 +1,12 @@
-
 export const SearchBox = ({handleChange})=>{
 
     const handleInputChange = (e) => {
-      handleChange(e.target.value)
+        handleChange(e.target.value)
     }
     const handleSubmit = (e)=>{
         e.preventDefault();
     }
-  
+
     return(
         <form onSubmit={handleSubmit} >
         <input
@@ -17,5 +16,4 @@ export const SearchBox = ({handleChange})=>{
         />
         </form>
     )
-
-  }
+}
